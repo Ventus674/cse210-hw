@@ -4,12 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        // EXCEEDING REQUIREMENTS:
-        // The program only selects words that have not
-        // already been hidden. This prevents the same
-        // word from being selected multiple times and
-        // ensures that each turn hides new words.
-
         Reference reference = new Reference("Proverbs", 3, 5, 6);
 
         string text = "Trust in the Lord with all thine heart; " +
