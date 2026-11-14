@@ -25,9 +25,18 @@ public class Word
     {
         if (_isHidden)
         {
-            return new string('_', _text.Length);
-        }
+            string hiddenWord = "";
 
-        return _text;
+            for (int i = 0; i < _text.Length; i++)
+            {
+                hiddenWord += "_";
+            }
+
+            return hiddenWord;
+        }
+        else
+        {
+            return _text;
+        }
     }
 }
