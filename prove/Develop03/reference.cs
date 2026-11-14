@@ -1,5 +1,3 @@
-using System;
-
 public class Reference
 {
     private string _book;
@@ -29,7 +27,9 @@ public class Reference
         {
             return $"{_book} {_chapter}:{_startVerse}";
         }
-
-        return $"{_book} {_chapter}:{_startVerse}-{_endVerse}";
+        else
+        {
+            return $"{_book} {_chapter}:{_startVerse}-{_endVerse}";
+        }
     }
 }
